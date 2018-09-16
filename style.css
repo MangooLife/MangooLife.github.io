@@ -1,487 +1,295 @@
-/* CSS WebAgency */
+/* CSS site ZOZORE */
+/* style CSS TP site */
 
-/* --------------------------- FONT FAMILY ------------------------------- */
-
-/*
-@font-face{
-	font-family: "fontawesome";
-	src: url('fonts/fontawesome-webfont.eot');
-	src: url('fonts/fontawesome-webfont.eot#iefix') format(eot),
-		 url('fonts/fontawesome-webfont.eot#fontawesome') format(svg),
-		 url('fonts/fontawesome-webfont.ttf') format(ttf),
-		 url('fonts/fontawesome-webfont.woff') format(woff);
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face{
-	font-family: "FontAwesome";
-	src: url('fonts/FontAwesome.otf');
-	font-weight: normal;
-	font-size: normal;
-}
-*/
-
-@font-face{
-	font-family: "Roboto-Black";
-	src: url('fonts/Roboto-Black.ttf');
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face{
-	font-family: "Roboto-Bold";
-	src: url('fonts/Roboto-Bold.ttf');
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face{
-	font-family: "Roboto-Medium";
-	src: url('fonts/Roboto-Medium.ttf');
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face{
-	font-family: "Roboto-Regular";
-	src: url('fonts/Roboto-Regular.ttf');
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face{
-	font-family: "Roboto-Thin";
-	src: url('fonts/Roboto-Thin.ttf');
-	font-weight: normal;
-	font-size: normal;
-}
-
-@font-face {
-    font-family: 'Roboto-Light';
-    src: url('fonts/Roboto-Light.eot');
-    src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Roboto-Light.woff') format('woff'),
-        url('fonts/Roboto-Light.ttf') format('truetype'),
-        url('fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-/* --------------------------- BODY ------------------------------- */
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
 body
 {
-    font-family: 'Roboto-Regular', Arial, sans-serif;
-    color: #777777;
-	margin: auto;
-	width: 100%;
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
 }
 
-/* --------------------------- HEADER ------------------------------- */
-header{
-	display:flex;
-	justify-content:space-around;
-	align-items: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	/* header sticky */
-	background-color: white;
-	position: -webkit-sticky;  /*required for Safari*/
-    position: sticky;
-    top: 0;/* required as well. */
-	z-index: 99;
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
 }
 
-/* Pour pouvoir les ancres */
-.ancres{
-	display: block;
-  	height: 97px; /*same height as header*/
-  	margin-top: -97px; /*same height as header*/
-  	/*visibility: hidden;*/
+section h1, footer h1, nav a
+{
+    font-family: 'Dayrom', serif;
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
-nav{
-	margin-left: 250px;
+header
+{
+    background: url('images/separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-nav ul{
-	display: flex;
-	list-style-type: none;
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
 }
 
-nav li{
-	margin-right: 28px;
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
-nav a{
-    font-size: 0.89em;
-    color: #777777;
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
     text-decoration: none;
 }
 
-nav a:hover{
-    color: #555555;
-    border-top: 3px solid #5CADD3;
-    padding-top: 38px;
-    padding-left: 15px;
-    padding-right: 15px;
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
 }
 
-/* --------------------------- SLIDER ------------------------------- */
-#slider{
-	position: relative;
-	width: 100%;
-	overflow: hidden;
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background: url('images/sanfrancisco.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
 }
 
-#slider img{
-	border-bottom: solid #45AED6 5px;
-}	
-
-#slider_description, #arrow_left, #arrow_right{
-	position:absolute;
-}
-
-/* Description */ 
-#slider h1{
-	font-family: 'Roboto-Medium', Arial, sans-serif;
-	font-size: 2.0em;
-	text-transform: uppercase;
-    color: #FDFDFD;
-    margin-bottom: 10px;
-}
-
-#slider span{
-	color: #5BABD0;
-}
-
-#slider p{
-	font-size:0.9em;
-	color: #FDFDFD;
-	padding-bottom: 30px;
-	margin-bottom: 5px;
-}
-
-.bouton_info{
-	text-decoration: none;
-	background-color: #59A9CE;
-	box-shadow: 0px 2px 2px #418EB4;
-	border-radius: 3px;
-	font-size: 1.1em;
-	padding: 13px;
-	color: #FFFFFF;
-}
-
-#slider_description{
-	width: 40%;
-	bottom: 230px;
-    left: 150px;
-}
-
-/* Flèches */
-#arrow_left, #arrow_right{
-	color: #FFFFFF;
-	font-size: 2em;
-	bottom: 50%;
-}
-
-#arrow_left{
-    left: 10px;
-}
-
-#arrow_right{
-    right: 10px;
-}
-
-/* --------------------------- SECTIONS ------------------------------- */
-section{
-	margin:auto;
-	width: 92%;
-	padding-top: 100px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-section h1{
-	font-family: 'Roboto-Medium', Arial, sans-serif;
-	font-size: 2.5em;
-	color: #272727;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 0px;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	margin-bottom: 8px;
-}
-
-section .trait{
-	border-bottom: solid 1px #EBEBEB;
-	width: 150px;
-	margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 15px;
-}
-
-.point{
-	text-align: center;
-	position: relative;
-}
-
-#point{
-	color: #45AED6;
-    border: 5px solid #FFFFFF;
-    border-radius: 50%;
+#banniere_description
+{
     position: absolute;
-    top: -27px;
-    right: 645px;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
 }
 
-section p{
-	text-align: center;
-	font-size: 0.9em;
-	color:#65696E;
-	padding-bottom: 15px;
-}
-
-/*********************** SERVICES **************************/
-#services{
-	display: flex;
-	flex-direction:column;
-	padding-bottom: 180px;
-}
-
-#description_services{
-	display: flex;
-	flex-direction:row;
-	justify-content:space-around;
-	align-item:center;
-}
-
-#image_services{
-	text-align: center;
-	width: 60%
-}
-
-#description{
-	position: relative;
-	width: 40%;
-}
-
-#description h2{
-	font-family: 'Roboto-Medium', Arial, sans-serif;
-	font-size: 1.2em;
-	color: #000000;
-	padding-bottom: 0px
-}
-
-#description p{
-	text-align: justify;
-	width: 85%;
-	padding-top: 0px
-}
-
-#UX, #UI, #SEO{
-	position: absolute;
-	font-size: 1.6em;
-    color: #45AEE6;
-    border: 1px solid #DCDCDC;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
     text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 2;
+}
+
+.ico_categorie
+{
     vertical-align: middle;
-    line-height: 60px;
+    margin-right: 8px;
 }
 
-#UX{
-	bottom: 230px;
-	left: -100px;
+article p
+{
+    font-size: 0.8em;
 }
 
-#UI{
-	bottom: 130px;
-	left: -100px;
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
 }
 
-#SEO{
-	bottom: 30px;
-	left: -100px;
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
 }
 
-#point1, #point2, #point3{
-	position: absolute;
-	color: #45AEE6;
-	font-size: 0.8em;
+#photo_zozor
+{
+    text-align: center;
 }
 
-#point1{
-	bottom: 250px;
-	left: -45px;
+#photo_zozor img
+{
+    border: 1px solid #181818;
 }
 
-#point2{
-	bottom: 150px;
-	left: -45px;
+aside img
+{
+    margin-right: 5px;
 }
 
-#point3{
-	bottom: 50px;
-	left: -45px;
+footer
+{
+    display: flex;
+    margin-bottom: 20px;
 }
 
-/************************ PORTFOLIO ***********************/
-#portfolio{
-	display: flex;
-	flex-direction:column;
-	background-color: #F5F5F5;
-	padding-bottom: 15px;
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top, url('images/ombre.png') repeat-x top;
+    padding-top: 25px;
 }
 
-/* => menu projets */
-#arrow_nav{
-	display: none;
+footer p, footer ul
+{
+    font-size: 0.8em;
 }
 
-#eye{
-	display: none;
+footer h1
+{
+    font-size: 1.1em;
 }
 
-#menu_projets{
-	font-size: 0.9em;
+
+#tweet
+{
+    width: 28%;
 }
 
-#menu_projets ul{
-	display: flex;
-	justify-content:center;
-	align-items:center;
-	padding-left: 0px;
+#mes_photos
+{
+    width: 35%;
 }
 
-#menu_projets li{
-	list-style-type: none;
-	text-decoration: none;
-	padding: 15px;
-	background-color: #E5E5E5;
+#mes_amis
+{
+    width: 31%;
 }
 
-#menu_projets a{
-    text-decoration:none;
-    color: #64686D;
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
 }
 
-/* li hover */
-#menu_projets li:hover{
-	padding-bottom: 10px;
-	background-color: #45AED6;
-	border-bottom: 5px solid #318DAF;
+#listes_amis
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
 }
 
-#menu_projets a:hover{
-	color:white;
+#mes_amis ul
+{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 2px;
 }
 
-/* border du menu */
-#menu_projets li:first-child{
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-}
-
-#menu_projets li:last-child{
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px; 
-}
-
-/* => images projets */
-#images_p{
-	display: flex;
-	flex-wrap:wrap;
-	justify-content:center;
-	width: 90%;
-	padding: 30px;
-}
-
-#images_p img{
-	width: 23%;
-	height: 23%;
-	padding: 10px;
-}
-
-#images_p img:hover{
-	opacity: 0.6;
-}
-
-/* --------------------------- CONTACT ------------------------------- */
-/* Map + voile bleu */
-#map{
-	width: 100%;
-	height: 630px;
-	opacity: 0.6;
-	border:none;
-}
-
-#contact{
-	width: 100%;
-	height: 631px;
-	background-color: #90baec;
-	position: relative;
-}
-/* formulaire */
-#formulaire{
-	position: absolute;
-	width: 23%;
-    right: 145px;
-    bottom: 60px;
-	background-color: rgba(255,255,255,0.8);
-	padding-top: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-#formulaire h1{
-	font-family: 'Roboto-Medium', Arial, sans-serif;
-	font-size: 1.5em;
-	color: black;
-}
-
-#formulaire p{
-	font-size: 0.9em;
-	line-height: 20px;
-	color: #65696E;
-}
-
-#formulaire span{
-	font-weight: bold;
-}
-
-#formulaire abbr{
-	border-bottom: 1px dotted black;
-}
-
-#formulaire input[type=text], #formulaire input[type=email], #formulaire textarea{
-    width: 95%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-#formulaire textarea{
-	height: 150px;
-}
-
-#bouton_form{
-	text-decoration: none;
-	background-color: #59A9CE;
-	box-shadow: 2px 2px 3px #2993BC;
-	border-radius: 3px;
-	font-size: 1em;
-	padding: 10px;
-	color: #FFFFFF;
-}
-
-/* --------------------------- FOOTER ------------------------------- */
-footer{
-	margin: 5px;
-	font-size: 0.5em;
+#mes_amis a
+{
+    text-decoration: none;
+    color: #760001;
 }

@@ -1,138 +1,85 @@
+<!-- HTML site ZOZORE -->
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" media="all and (max-width:1280px)" href="responsive.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
-		<title>WebAgency - L'agence de tous vos projets !</title>
-	</head>
-	<body>
-		<div id="accueil"></div>
-		<!-- HEADER -->
-		<header>
-			<!-- LOGO WebAgency -->
-			<img src="images/logo.png" class="logo" alt="Logo WebAgency" title="Logo WebAgency"/>
-
-			<!-- NAV -->
-			<nav>
-				<ul>
-					<li><a href="#accueil">Accueil</a></li>
-					<li><a href="#Services">Services</a></li>
-					<li><a href="#Portfolio">Portfolio</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<!-- SLIDER -->
-		<div id="slider">
-			<img src="images/slider/bg1.jpg" alt="Slider - WebAgency: L'agence de tous vos projets !" title="WebAgency: L'agence de tous vos projets !" />
-            <i class="fas fa-angle-left" id="arrow_left"></i>
-            <i class="fas fa-angle-right" id="arrow_right"></i>
-            <div id="slider_description">
-               	<h1><span>WebAgency</span> : L'agence de tous vos projets</h1>
-                <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
-                <a href="#" class="bouton_info" title="Plus d'infos">Plus d'infos</a>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Zozor - Carnets de voyage</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="images/zozor_logo.png" alt="Logo de Zozor" />
+                        <h1>Zozor</h1>    
+                    </div>
+                    <h2>Carnets de voyage</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">CV</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    Retour sur mes vacances aux États-Unis...
+                    <a href="#" class="bouton_rouge">Voir l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
+                </div>
             </div>
+            
+            <section>
+                <article>
+                    <h1><img src="images/ico_epingle.png" alt="Catégorie voyage" class="ico_categorie" />Je suis un grand voyageur</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat consequat velit commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus lorem.</p>
+                    <p>Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus. Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisl, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.</p>
+                    <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut iaculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
+                </article>
+                <aside>
+                    <h1>À propos de l'auteur</h1>
+                    <img src="images/bulle.png" alt="" id="fleche_bulle" />
+                    <p id="photo_zozor"><img src="images/zozor_classe.png" alt="Photo de Zozor" /></p>
+                    <p>Laisse-moi le temps de me présenter&nbsp;: je m'appelle Zozor, je suis né un 23 novembre 2005.</p>
+                    <p>Bien maigre, n'est-ce pas ? C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie afin que vous sachiez qui je suis réellement.</p>
+                    <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>
+                </aside>
+            </section>
+            
+            <footer>
+                <div id="tweet">
+                    <h1>Mon dernier tweet</h1>
+                    <p>Hii haaaaaan !</p>
+                    <p>le 12 mai à 23h12</p>
+                </div>
+                <div id="mes_photos">
+                    <h1>Mes photos</h1>
+                    <p><img src="images/photo1.jpg" alt="Photographie" /><img src="images/photo2.jpg" alt="Photographie" /><img src="images/photo3.jpg" alt="Photographie" /><img src="images/photo4.jpg" alt="Photographie" /></p>
+                </div>
+                <div id="mes_amis">
+                    <h1>Mes amis</h1>
+                    <div id="listes_amis">
+                        <ul>
+                            <li><a href="#">Pupi le lapin</a></li>
+                            <li><a href="#">Mr Baobab</a></li>
+                            <li><a href="#">Kaiwaii</a></li>
+                            <li><a href="#">Perceval.eu</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Belette</a></li>
+                            <li><a href="#">Le concombre masqué</a></li>
+                            <li><a href="#">Ptit prince</a></li>
+                            <li><a href="#">Mr Fan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-		<!-- SECTIONS SERVICES, PROJETS et MAP-->
-		<section>
-			<!-- SERVICES -->
-			<span class="ancres" id="Services"></span>
-			<div id="services">
-				<h1>Nos services</h1>
-				<div class="trait"></div>
-				<div class="point"><i class="fas fa-circle" id="point"></i></div>
-				<p>UX, UI et SEO ? Ils n'ont aucun secret pour nous !</p>
-
-				<!-- DESCRIPTION DES SERVICES -->
-				<div id="description_services">
-					<div id="image_services">
-						<img src="images/main-feature.png" alt="Description des services" title="Description des services" />
-					</div>
-
-					<!-- BLOC UX, UI et SEO -->
-					<div id="description">
-						<i class="fas fa-chart-line" id="UX"></i>
-						<i class="fas fa-cubes" id="UI"></i>
-						<i class="fas fa-chart-pie" id="SEO"></i>
-						<i class="fas fa-circle" id="point1"></i>
-						<i class="fas fa-circle" id="point2"></i>
-						<i class="fas fa-circle" id="point3"></i>
-						<img src="">
-						<h2>UX design</h2>
-						<p>L’UX est un process complet qui prend en compte l’UI mais aussi le contenu, le design, l’architecture du site…</p>
-						<h2>UI design</h2>
-						<p>L'UI design se rapporte à l'environnement graphique dans lequel évolue l'utilisateur d'un logiciel, d'un site web ou d'une application.</p>
-						<h2>SEO</h2>
-						<p>C'est l'ensemble des techniques permettant d'améliorer la visibilité d'un site web avec des optimisations sémantique et technique.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- PORTFOLIO -->
-			<span class="ancres" id="Portfolio"></span>
-			<div id="portfolio">
-				<h1>Nos projets</h1>
-				<div class="trait"></div>
-				<div class="point"><i class="fas fa-circle" id="point"></i></div>
-				<p>Découvrez ci-dessous tous les projets et créations produits par nos petites mains ;-)</p>
-
-				<!-- MENU PROJETS -->
-				<div id="menu_projets">
-					<i class="fas fa-caret-down" id="arrow_nav"></i>
-					<ul>
-						<li><a href="#">All Works</a></li>
-						<li><a href="#">Creative</a></li>
-						<li><a href="#">Corporate</a></li>
-						<li><a href="#">Portfolio</a></li>
-					</ul>
-				</div>
-				<!-- IMAGES PORTFOLIO -->
-				<i class="far fa-eye" id="eye"></i>
-				<div id="images_p">
-					<img src="images/portfolio/01.jpg" alt="Projet 01" />
-					<img src="images/portfolio/02.jpg" alt="Projet 02" />
-					<img src="images/portfolio/03.jpg" alt="Projet 03" />
-					<img src="images/portfolio/04.jpg" alt="Projet 04" />
-					<img src="images/portfolio/05.jpg" alt="Projet 05" />
-					<img src="images/portfolio/06.jpg" alt="Projet 06" />
-					<img src="images/portfolio/07.jpg" alt="Projet 07" />
-					<img src="images/portfolio/08.jpg" alt="Projet 08" />
-				</div>
-			</div>
-		</section>
-
-		<!-- CONTACT -->
-		<span class="ancres" id="Contact"></span>
-		<div id="contact">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080334!2d2.347636915677772!3d48.873055307627986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1536871761497" id="map"></iframe>
-			<!-- FORMULAIRE -->
-			<div id="formulaire">
-				<h1>Contact Info</h1>
-				<p><span>WebAgency SAS</span><br/>
-					25 rue d'Hauteville 75010 PARIS<br/>
-					<abbr title="Telephone">Tel :</abbr> 01 02 03 04 05
-				</p>
-				<form method="post" action="#">
-					<p>
-						<input type="text" placeholder="Name" class="name" id="name"/><br/>
-						<input type="email" placeholder="Email" class="email" id="email"/><br/>
-						<input type="text" placeholder="Subject" class="subject" id="subject"/><br/>
-						<textarea placeholder="Message" class="message" id="message"></textarea><br/>
-						<input type="button" value="Send Message" id="bouton_form"/>
-					</p>
-				</form>
-			</div>
-		</div>
-
-		<!-- FOOTER -->
-		<footer>
-			<p>© 2018 WebAgency ~ All Rights Reserved.</p>
-		</footer>
-	
-	</body>
+    </body>
 </html>
