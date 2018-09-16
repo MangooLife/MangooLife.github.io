@@ -1,0 +1,8 @@
+/* CSS Responsive WebAgency */
+
+/* --------------------------- HEADER ------------------------------- */
+header{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
