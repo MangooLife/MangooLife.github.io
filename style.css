@@ -125,19 +125,22 @@ nav a:hover{
 #slider{
 	position: relative;
 	width: 100%;
-	overflow: hidden;
+	overflow: hidden;	
+	height: 100%;
+	margin-bottom: 50px;
 }
-
-#slider img{
-	border-bottom: solid #45AED6 5px;
-}	
 
 #slider_description, #arrow_left, #arrow_right{
 	position:absolute;
 }
 
+#slider img{
+	border-bottom: solid #45AED6 5px;
+	width: 100%;
+}	
+
 /* Description */ 
-#slider h1{
+#slider_description h1{
 	font-family: 'Roboto-Medium', Arial, sans-serif;
 	font-size: 2.0em;
 	text-transform: uppercase;
@@ -145,11 +148,11 @@ nav a:hover{
     margin-bottom: 10px;
 }
 
-#slider span{
+#slider_description span{
 	color: #5BABD0;
 }
 
-#slider p{
+#slider_description p{
 	font-size:0.9em;
 	color: #FDFDFD;
 	padding-bottom: 30px;
@@ -168,7 +171,7 @@ nav a:hover{
 
 #slider_description{
 	width: 40%;
-	bottom: 230px;
+	bottom: 210px;
     left: 150px;
 }
 
@@ -236,8 +239,8 @@ section .trait{
     border: 5px solid #FFFFFF;
     border-radius: 50%;
     position: absolute;
-    top: -27px;
-    right: 645px;
+    top: -30px;
+    left: 49%;
 }
 
 section p{
@@ -252,6 +255,7 @@ section p{
 	display: flex;
 	flex-direction:column;
 	padding-bottom: 180px;
+	height: 100%;
 }
 
 #description_services{
@@ -275,7 +279,9 @@ section p{
 	font-family: 'Roboto-Medium', Arial, sans-serif;
 	font-size: 1.2em;
 	color: #000000;
-	padding-bottom: 0px
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+
 }
 
 #description p{
@@ -339,15 +345,18 @@ section p{
 	flex-direction:column;
 	background-color: #F5F5F5;
 	padding-bottom: 15px;
+	height: 100%;
 }
 
 /* => menu projets */
-#arrow_nav{
-	display: none;
-}
-
 #menu_projets{
 	font-size: 0.9em;
+	display: relative;
+}
+
+#arrow_nav{
+	display: absolute;
+	color: #318DAF;
 }
 
 #menu_projets ul{
@@ -362,6 +371,7 @@ section p{
 	text-decoration: none;
 	padding: 15px;
 	background-color: #E5E5E5;
+	position: relative;
 }
 
 #menu_projets a{
@@ -373,7 +383,19 @@ section p{
 #menu_projets li:hover{
 	padding-bottom: 10px;
 	background-color: #45AED6;
-	border-bottom: 5px solid #318DAF;
+	border-bottom: 3px solid #318DAF;
+}
+
+
+#menu_projets li:hover:after{
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #318DAF;
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 70%;
+	margin-left: -25px;
 }
 
 #menu_projets a:hover{
@@ -476,6 +498,7 @@ section p{
 	border:none;
 }
 
+/* voile bleu */
 #contact{
 	width: 100%;
 	height: 631px;
@@ -510,7 +533,7 @@ section p{
 	font-weight: bold;
 }
 
-#formulaire abbr{
+abbr{
 	border-bottom: 1px dotted black;
 }
 
