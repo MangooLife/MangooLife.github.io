@@ -351,12 +351,6 @@ section p{
 /* => menu projets */
 #menu_projets{
 	font-size: 0.9em;
-	display: relative;
-}
-
-#arrow_nav{
-	display: absolute;
-	color: #318DAF;
 }
 
 #menu_projets ul{
