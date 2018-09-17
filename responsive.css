@@ -79,11 +79,16 @@ section{
 }
 
 #image_services img{
-	width: 100%
+	width: 100%;
+}
+
+#description{
+	width: 50%;
 }
 
 #description p{
 	width: 100%;
+	font-size: 2vw;
 }
 
 /************************ PORTFOLIO ***********************/
@@ -106,10 +111,10 @@ section{
 
 #eye1, #eye2, #eye3, #eye4, #eye5, #eye6, #eye7, #eye8{
     position: absolute;
-	font-size: 2vw;
+	font-size: 0.7em;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 10%;
+    height: 40%;
     top: -20%;
   	left: 80%;
 }
