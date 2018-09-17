@@ -266,8 +266,11 @@ section p{
 }
 
 #image_services{
-	text-align: center;
-	width: 60%
+	vertical-align: center;
+}
+
+#image_services img{
+	width: 100%
 }
 
 #description{
@@ -304,17 +307,17 @@ section p{
 }
 
 #UX{
-	bottom: 230px;
+	bottom: 73%;
 	left: -100px;
 }
 
 #UI{
-	bottom: 130px;
+	bottom: 40%;
 	left: -100px;
 }
 
 #SEO{
-	bottom: 30px;
+	bottom: 10%;
 	left: -100px;
 }
 
@@ -325,17 +328,17 @@ section p{
 }
 
 #point1{
-	bottom: 250px;
+	bottom: 80%;
 	left: -45px;
 }
 
 #point2{
-	bottom: 150px;
+	bottom: 47%;
 	left: -45px;
 }
 
 #point3{
-	bottom: 50px;
+	bottom: 17%;
 	left: -45px;
 }
 
@@ -368,7 +371,7 @@ section p{
 	position: relative;
 }
 
-#menu_projets a{
+.li_menu a{
     text-decoration:none;
     color: #64686D;
 }
@@ -392,7 +395,7 @@ section p{
 	margin-left: -25px;
 }
 
-#menu_projets a:hover{
+.li_menu:hover a{
 	color:white;
 }
 
