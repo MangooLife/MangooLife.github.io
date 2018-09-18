@@ -3,10 +3,23 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<link rel="icon" type="image/png" href="images/logo.png" sizes="32x32" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" media="all and (max-width:1280px)" href="responsive.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+		<link rel="stylesheet" media="all and (max-width:1280px)" href="responsive.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" /> 
 		<title>WebAgency - L'agence de tous vos projets !</title>
+		<!-- Opengraph -->
+		<meta property="og:title" content="WebAgency - L'agence de tous vos projets !" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="https://mangoolife.github.io" />
+		<meta property="og:image" content="https://mangoolife.github.io/images/logo.png" />
+		<!-- Twitter card -->
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:site' content='@WebAgency' />
+		<meta name='twitter:creator' content='@yourtwitterhandle' />
+		<meta name='twitter:title' content='WebAgency' />
+		<meta name='twitter:description' content="L'agence de tous vos projets ! - Nous vous accompagnons dans vos projets de créations UI, UX et SEO" />
+		<meta name='twitter:image' content='https://mangoolife.github.io/images/logo.png' />
 	</head>
 	<body>
 		<div id="accueil"></div>
@@ -18,16 +31,16 @@
 			<!-- NAV -->
 			<nav>
 				<ul>
-					<li><a href="#accueil" class="active">Accueil</a></li>
-					<li><a href="#Services" class="active">Services</a></li>
-					<li><a href="#Portfolio" class="active">Portfolio</a></li>
-					<li><a href="#Contact" class="active">Contact</a></li>
+					<li><a href="#accueil">Accueil</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#Contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<!-- SLIDER -->
-		<div id="slider">
+		<section id="slider">
 			<img src="images/slider/bg1.jpg" alt="Slider - WebAgency: L'agence de tous vos projets !" title="WebAgency: L'agence de tous vos projets !" />
             <i class="fas fa-angle-left" id="arrow_left"></i>
             <i class="fas fa-angle-right" id="arrow_right"></i>
@@ -36,160 +49,169 @@
                 <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
                 <a href="#" class="bouton_info" title="Plus d'infos">Plus d'infos</a>
             </div>
-        </div>
+        </section>
 
-		<!-- SECTIONS SERVICES, PROJETS et MAP-->
-		<section>
-			<!-- SERVICES -->
-			<div id="services">
-				<span class="ancres" id="Services"></span>
-				<h2>Nos services</h2>
-				<div class="trait"></div>
-				<div class="point"><i class="fas fa-circle" id="point1s"></i></div>
-				<p>UX, UI et SEO ? Ils n'ont aucun secret pour nous !</p>
+		<!-- SERVICES -->
+		<section id="services">
+			<span class="ancres" id="Services"></span>
+			<h2>Nos services</h2>
+			<div class="trait"></div>
+			<div class="point"><i class="fas fa-circle" id="point1s"></i></div>
+			<p>UX, UI et SEO ? Ils n'ont aucun secret pour nous !</p>
 
-				<!-- DESCRIPTION DES SERVICES -->
-				<div id="description_services">
-					<div id="image_services">
-						<img src="images/main-feature.png" alt="Description des services" title="Description des services" />
-					</div>
+			<!-- DESCRIPTION DES SERVICES -->
+			<div id="description_services">
+				<div id="image_services">
+					<img src="images/main-feature.png" alt="Description des services" title="Description des services" />
+				</div>
 
-					<!-- BLOC UX, UI et SEO -->
-					<div id="description">
-						<i class="fas fa-chart-line" id="UX"></i>
-						<i class="fas fa-cubes" id="UI"></i>
-						<i class="fas fa-chart-pie" id="SEO"></i>
-						<i class="fas fa-circle" id="point1"></i>
-						<i class="fas fa-circle" id="point2"></i>
-						<i class="fas fa-circle" id="point3"></i>
-						<h3>UX design</h3>
-						<p>L’UX est un process complet qui prend en compte l’UI mais aussi le contenu, le design, l’architecture du site…</p>
-						<h3>UI design</h3>
-						<p>L'UI design se rapporte à l'environnement graphique dans lequel évolue l'utilisateur d'un logiciel, d'un site web ou d'une application.</p>
-						<h3>SEO</h3>
-						<p>C'est l'ensemble des techniques permettant d'améliorer la visibilité d'un site web avec des optimisations sémantique et technique.</p>
-					</div>
+				<!-- BLOC UX, UI et SEO -->
+				<div id="description">
+					<i class="fas fa-chart-line" id="UX"></i>
+					<i class="fas fa-cubes" id="UI"></i>
+					<i class="fas fa-chart-pie" id="SEO"></i>
+					<i class="fas fa-circle" id="point1"></i>
+					<i class="fas fa-circle" id="point2"></i>
+					<i class="fas fa-circle" id="point3"></i>
+					<h3>UX design</h3>
+					<p>L’UX est un process complet qui prend en compte l’UI mais aussi le contenu, le design, l’architecture du site…</p>
+					<h3>UI design</h3>
+					<p>L'UI design se rapporte à l'environnement graphique dans lequel évolue l'utilisateur d'un logiciel, d'un site web ou d'une application.</p>
+					<h3>SEO</h3>
+					<p>C'est l'ensemble des techniques permettant d'améliorer la visibilité d'un site web avec des optimisations sémantique et technique.</p>
 				</div>
 			</div>
+		</section>
 
-			<!-- PORTFOLIO -->
-			<div id="portfolio">	
-			<span class="ancres" id="Portfolio"></span>
-			<div id="menuprojet1"></div>
-			<div id="menuprojet2"></div>
-			<div id="menuprojet3"></div>
-			<div id="menuprojet4"></div>
-				<h2>Nos projets</h2>
-				<div class="trait"></div>
-				<div class="point"><i class="fas fa-circle" id="point2s"></i></div>
-				<p>Découvrez ci-dessous tous les projets et créations produits par nos petites mains ;-)</p>
+		<!-- PORTFOLIO -->
+		<section id="portfolio">	
+		<span class="ancres" id="Portfolio"></span>
+			<h2>Nos projets</h2>
+			<div class="trait"></div>
+			<div class="point"><i class="fas fa-circle" id="point2s"></i></div>
+			<p>Découvrez ci-dessous tous les projets et créations produits par nos mains</p>
 
-				<!-- MENU PROJETS -->
-				<div id="menu_projets">
-					<ul>
-						<li class="li_menu"><a href="#menuprojet1">All Works</a></li>
-						<li class="li_menu"><a href="#menuprojet2">Creative</a></li>
-						<li class="li_menu"><a href="#menuprojet3">Corporate</a></li>
-						<li class="li_menu"><a href="#menuprojet4">Portfolio</a></li>
-					</ul>
+			<!-- MENU PROJETS -->
+			<div id="menu_projets">
+				<ul>
+					<li class="active"><a href="#">All Works</a></li>
+					<li class="li_menu"><a href="#">Creative</a></li>
+					<li class="li_menu"><a href="#">Corporate</a></li>
+					<li class="li_menu"><a href="#">Portfolio</a></li>
+				</ul>
+			</div>
+			<!-- IMAGES PORTFOLIO -->
+			<div id="images_p">
+				<!-- IMG 1 -->
+				<div class="container">
+					<img src="images/portfolio/01.jpg" alt="Projet 01" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				  			<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>Lunettes</h3>
+				    		<p>Site ecommerce</p>
+				    	</div>
+				  	</div>
 				</div>
-				<!-- IMAGES PORTFOLIO -->
-				<div id="images_p">
-					<!-- IMG 1 -->
-					<div class="container">
-						<img src="images/portfolio/01.jpg" alt="Projet 01" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					  			<div class="far fa-eye" id="eye1"></div>
-					    		<h3>Lunettes</h3>
-					    		<p>Site ecommerce</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 2 -->
-					<div class="container">
-						<img src="images/portfolio/02.jpg" alt="Projet 02" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye2"></div>
-					    		<h3>Soirée costumée</h3>
-					    		<p>Création de visuels</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 3 -->
-					<div class="container">
-						<img src="images/portfolio/03.jpg" alt="Projet 03" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye3"></div>
-					    		<h3>L'original Pompadour</h3>
-					    		<p>Site vitrine pour un coiffeur</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 4 -->
-					<div class="container">
-						<img src="images/portfolio/04.jpg" alt="Projet 04" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye4"></div>
-					    		<h3>#Savethedate</h3>
-					    		<p>Création de visuels</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 5 -->
-					<div class="container">
-						<img src="images/portfolio/05.jpg" alt="Projet 05" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye5"></div>
-					    		<h3>Les 2 bag</h3>
-					    		<p>Optimisation du SEO et SEA</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 6 -->
-					<div class="container">
-						<img src="images/portfolio/06.jpg" alt="Projet 06" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye6"></div>
-					    		<h3>TravelWord</h3>
-					    		<p>Site vitrine avec UX et UI</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 7 -->
-					<div class="container">
-						<img src="images/portfolio/07.jpg" alt="Projet 07" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye7"></div>
-					    		<h3>La flèche</h3>
-					    		<p>Optimisation UI et UX</p>
-					    	</div>
-					  	</div>
-					</div>
-					<!-- IMG 8 -->
-					<div class="container">
-						<img src="images/portfolio/08.jpg" alt="Projet 08" class="projet"/>
-					  	<div class="overlay">
-					    	<div class="text">
-					    		<div class="far fa-eye" id="eye8"></div>
-					    		<h3>Mon blog</h3>
-					    		<p>Création de visuels</p>
-					    	</div>
-					  	</div>
-					</div>
+				<!-- IMG 2 -->
+				<div class="container">
+					<img src="images/portfolio/02.jpg" alt="Projet 02" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>Soirée costumée</h3>
+				    		<p>Création de visuels</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 3 -->
+				<div class="container">
+					<img src="images/portfolio/03.jpg" alt="Projet 03" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>L'original Pompadour</h3>
+				    		<p>Site vitrine pour un coiffeur</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 4 -->
+				<div class="container">
+					<img src="images/portfolio/04.jpg" alt="Projet 04" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>#Savethedate</h3>
+				    		<p>Création de visuels</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 5 -->
+				<div class="container">
+					<img src="images/portfolio/05.jpg" alt="Projet 05" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>Les 2 bag</h3>
+				    		<p>Optimisation du SEO et SEA</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 6 -->
+				<div class="container">
+					<img src="images/portfolio/06.jpg" alt="Projet 06" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>TravelWord</h3>
+				    		<p>Site vitrine avec UX et UI</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 7 -->
+				<div class="container">
+					<img src="images/portfolio/07.jpg" alt="Projet 07" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		<div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>La flèche</h3>
+				    		<p>Optimisation UI et UX</p>
+				    	</div>
+				  	</div>
+				</div>
+				<!-- IMG 8 -->
+				<div class="container">
+					<img src="images/portfolio/08.jpg" alt="Projet 08" class="projet"/>
+				  	<div class="overlay">
+				    	<div class="text">
+				    		 <div class="eye">
+				  				<i class="far fa-eye"></i>
+				  			</div>
+				    		<h3>Mon blog</h3>
+				    		<p>Création de visuels</p>
+				    	</div>
+				  	</div>
 				</div>
 			</div>
 		</section>
 
 		<span class="ancres" id="Contact"></span>
 		<!-- CONTACT -->
-		<div id="contact">
+		<section id="contact">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080334!2d2.347636915677772!3d48.873055307627986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1536871761497" id="map"></iframe>
 			<!-- FORMULAIRE -->
 			<div id="formulaire">
@@ -208,19 +230,7 @@
 					</p>
 				</form>
 			</div>
-		</div>
+		</section>
 
-		<!-- FOOTER -->
-		<footer>
-			<p>© 2018 WebAgency ~ All Rights Reserved.</p>
-			<p>
-			    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-			        <img style="border:0;width:88px;height:31px"
-			            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-			            alt="CSS Valide !" />
-			    </a>
-			</p>
-		</footer>
-	
 	</body>
 </html>

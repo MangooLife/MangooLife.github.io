@@ -109,7 +109,7 @@ section{
 	margin-bottom: 2px;
 }
 
-#eye1, #eye2, #eye3, #eye4, #eye5, #eye6, #eye7, #eye8{
+.eye{
     position: absolute;
 	font-size: 0.7em;
     border-radius: 50%;

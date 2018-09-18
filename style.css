@@ -104,21 +104,21 @@ nav ul{
 }
 
 nav li{
-	margin-right: 28px;
+	/*margin-right: 28px;*/
 }
 
 nav a{
     font-size: 0.89em;
     color: #777777;
     text-decoration: none;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 nav a:hover{
     color: #555555;
     border-top: 3px solid #5CADD3;
     padding-top: 38px;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 /* --------------------------- SLIDER ------------------------------- */
@@ -128,16 +128,18 @@ nav a:hover{
 	overflow: hidden;	
 	height: 100%;
 	margin-bottom: 50px;
-}
-
-#slider_description, #arrow_left, #arrow_right{
-	position:absolute;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 #slider img{
 	border-bottom: solid #45AED6 5px;
-	width: 100%;
 }	
+
+#slider_description, #arrow_left, #arrow_right{
+	position:absolute;
+}
 
 /* Description */ 
 #slider_description h1{
@@ -157,6 +159,7 @@ nav a:hover{
 	color: #FDFDFD;
 	padding-bottom: 30px;
 	margin-bottom: 5px;
+	text-align: left;
 }
 
 .bouton_info{
@@ -182,22 +185,22 @@ nav a:hover{
 	bottom: 45%;
     background-color: rgba(0,0,0,0.3);
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     vertical-align: middle;
     line-height: 70px;
 }
 
 #arrow_left{
-    left: -40px;
+    left: -51px;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 13px;
 }
 
 #arrow_right{
-    right: -40px;
+    right: -51px;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 13px;
 }
 
 /* --------------------------- SECTIONS ------------------------------- */
@@ -270,7 +273,7 @@ section p{
 }
 
 #image_services img{
-	width: 100%
+	width: 100%;
 }
 
 #description{
@@ -350,6 +353,9 @@ section p{
 	background-color: #F5F5F5;
 	padding-bottom: 15px;
 	height: 100%;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 /* => menu projets */
@@ -375,6 +381,28 @@ section p{
 .li_menu a{
     text-decoration:none;
     color: #64686D;
+}
+
+#menu_projets .active{
+	padding-bottom: 10px;
+	background-color: #45AED6;
+	border-bottom: 3px solid #318DAF;
+}
+
+.active:after{
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #318DAF;
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 70%;
+	margin-left: -25px;
+}
+
+.active a{
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 /* li hover */
@@ -421,7 +449,8 @@ section p{
 
 .container{
 	position: relative;
-	width: 25%
+	width: 25%;
+	height:0%;
 }
 
 .projet{
@@ -471,7 +500,7 @@ section p{
 	color: #FFFFFF;
 }
 
-#eye1, #eye2, #eye3, #eye4, #eye5, #eye6, #eye7, #eye8{
+.eye{
     position: absolute;
 	font-size: 1em;
     color: #FFFFFF;
@@ -502,6 +531,10 @@ section p{
 	height: 631px;
 	background-color: #90baec;
 	position: relative;
+	margin:auto;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 /* formulaire */
 #formulaire{
@@ -525,14 +558,11 @@ section p{
 	font-size: 0.9em;
 	line-height: 20px;
 	color: #65696E;
+	text-align: left;
 }
 
 #formulaire span{
 	font-weight: bold;
-}
-
-abbr{
-	border-bottom: 1px dotted black;
 }
 
 #formulaire input[type=text], #formulaire input[type=email], #formulaire textarea{
