@@ -133,13 +133,14 @@ nav a:hover{
 	padding-right: 0px;
 }
 
-#slider img{
-	border-bottom: solid #45AED6 5px;
-}	
-
 #slider_description, #arrow_left, #arrow_right{
 	position:absolute;
 }
+
+#slider img{
+	border-bottom: solid #45AED6 5px;
+	width: 100%;
+}	
 
 /* Description */ 
 #slider_description h1{
@@ -204,6 +205,13 @@ nav a:hover{
 }
 
 /* --------------------------- SECTIONS ------------------------------- */
+section{
+	margin:auto;
+	width: 92%;
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
 
 section h2{
 	font-family: 'Roboto-Medium', Arial, sans-serif;
@@ -252,8 +260,6 @@ section p{
 	flex-direction:column;
 	padding-bottom: 180px;
 	height: 100%;
-	margin:auto;
-	width: 92%;
 }
 
 #description_services{
@@ -351,8 +357,6 @@ section p{
 	padding-top: 0px;
 	padding-left: 0px;
 	padding-right: 0px;
-	margin:auto;
-	width: 92%;
 }
 
 /* => menu projets */
