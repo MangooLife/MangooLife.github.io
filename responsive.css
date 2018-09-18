@@ -1,6 +1,5 @@
 /* CSS Responsive WebAgency */
 
-
 /* --------------------------- HEADER ------------------------------- */
 header{
 	display: flex;
@@ -84,6 +83,7 @@ section{
 
 #description{
 	width: 50%;
+	margin-left: 100px;
 }
 
 #description p{

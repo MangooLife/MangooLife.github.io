@@ -290,7 +290,8 @@ section p{
 #description p{
 	text-align: justify;
 	width: 85%;
-	padding-top: 0px
+	padding-top: 0px;
+	line-height: 25px;
 }
 
 #UX, #UI, #SEO{
