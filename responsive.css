@@ -1,13 +1,8 @@
 /* CSS Responsive WebAgency */
 
-/* --------------------------- HEADER ------------------------------- */
-header{
-	display: flex;
-	flex-direction:column;
-	justify-content:center;
-	align-items:center;
-}
+/*********************************  DEFAULT ****************************************/
 
+/* --------------------------- HEADER ------------------------------- */
 nav{
 	margin-left: 0px;
 	padding-bottom: 0px
@@ -43,18 +38,6 @@ nav{
 	overflow: visible;
 }
 
-#arrow_left, #arrow_right{
-	font-size:2vw;
-	width: 50px;
-	top:35%;
-}
-
-nav a:hover{
-    color: #555555;
-    border-bottom: 3px solid #5CADD3;
-    border-top: 0px;
-}
-
 /* --------------------------- SECTIONS ------------------------------- */
 
 section{
@@ -88,14 +71,9 @@ section{
 
 #description p{
 	width: 100%;
-	font-size: 2vw;
 }
 
 /************************ PORTFOLIO ***********************/
-
-#menu_projets{
-	font-size: 2vw;
-}
 
 .container{
 	width: 50%;
@@ -124,7 +102,6 @@ section{
 	width: 30%;
 	height: 70%;
 	right: 5%;
-	font-size: 2vw;
 }
 
 #formulaire input[type=text], #formulaire input[type=email], #formulaire textarea{
@@ -133,4 +110,116 @@ section{
 
 #formulaire textarea{
 	height: 100px;
+}
+
+
+/************************************** MEDIA PERSO ***************************************/
+/* --------------------------- RESPONSIVE ------------------------------- */
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  header{
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		padding-top:10px;
+		padding-bottom: 0px;
+	}
+
+	nav a:hover{
+    	color: #555555;
+    	border-bottom: 3px solid #5CADD3;
+    	border-top: 0px;
+	}
+
+	#arrow_left, #arrow_right{
+		width: 70px;
+		height: 70px;
+		top:35%;
+		bottom: 34%;
+	}
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  header{
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		padding-top:10px;
+		padding-bottom: 0px;
+	}
+
+	.logo{
+		width: 50%;
+	}
+
+	nav a:hover{
+    	color: #555555;
+    	border-bottom: 3px solid #5CADD3;
+    	border-top: 0px;
+	}
+
+	#arrow_left, #arrow_right{
+		width: 70px;
+		height: 70px;
+		top:26%;
+		bottom: 25%;
+	}
+
+	.ancres{
+		display: block;
+	  	height: 104px; 
+	  	margin-top: -104px; 
+	}
+
+	#menu_projets li{
+		padding: 7px;
+	}
+  
 }

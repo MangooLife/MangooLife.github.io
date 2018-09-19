@@ -86,7 +86,7 @@ header{
 	z-index: 99;
 }
 
-/* Pour pouvoir les ancres */
+/* Pour pouvoir voir les ancres */
 .ancres{
 	display: block;
   	height: 97px; /*same height as header*/
@@ -369,6 +369,7 @@ section p{
 	justify-content:center;
 	align-items:center;
 	padding-left: 0px;
+	margin-bottom: 50px;
 }
 
 #menu_projets li{
@@ -444,20 +445,21 @@ section p{
 #images_p{
 	display: flex;
 	flex-wrap:wrap;
-	justify-content:space-between;
-	padding: 30px;
+	justify-content:center;
 }
 
 .container{
 	position: relative;
-	width: 25%;
+	width: 21%;
 	height:0%;
+	margin-bottom: 20px;
+	margin-left: 20px;
 }
 
 .projet{
-	width: 90%;
+	width: 100%;
 	display: block;
-	margin-bottom: 30px;
+	height: auto;
 }
 
 .overlay {
@@ -465,16 +467,18 @@ section p{
   bottom: 0;
   left: 0;
   right: 0;
+  background: rgb(0, 0, 0);
   background-color: rgba(0,0,0,0.4);
-  overflow: hidden;
-  width: 90%;
-  height: 0;
+  width: 100%;
   transition: .5s ease;
-  margin-bottom: 30px;
+  opacity: 0;
+  margin-bottom:0px;
+  overflow: hidden;
 }
 
 .container:hover .overlay {
-  height: 26%;
+  height: 28%;
+  opacity:1;
   overflow: visible;
 }
 
@@ -515,6 +519,7 @@ section p{
     line-height: 2;
     top: -25%;
   	left: 85%;
+  	overflow: visible;
 }
 
 /* --------------------------- CONTACT ------------------------------- */
@@ -553,6 +558,8 @@ section p{
 	font-family: 'Roboto-Medium', Arial, sans-serif;
 	font-size: 1.5em;
 	color: black;
+	margin-top :10px;
+	margin-bottom: 10px;
 }
 
 #formulaire p{
@@ -560,6 +567,7 @@ section p{
 	line-height: 20px;
 	color: #65696E;
 	text-align: left;
+	margin: 0px;
 }
 
 #formulaire span{
