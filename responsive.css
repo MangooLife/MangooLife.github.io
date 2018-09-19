@@ -214,6 +214,16 @@ section{
 		padding-bottom: 0px;
 	}
 
+	.logo{
+		width: 30%;
+	}
+
+	.ancres{
+		display: block;
+	  	height: 95px; 
+	  	margin-top: -95px; 
+	}
+
 	nav a:hover{
     	color: #555555;
     	border-bottom: 3px solid #5CADD3;
@@ -358,10 +368,11 @@ section{
 
 	#formulaire h1{
 		font-size: 2vmax;
+		margin-top:2px;
 	}
 
 	#formulaire p{
-		font-size: 2vmax;
+		font-size: 3vmin;
 	}
 
 
