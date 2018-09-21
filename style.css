@@ -113,13 +113,23 @@ nav a:hover{
 	padding-right: 0px;
 }
 
-#slider_description, #arrow_left, #arrow_right{
+#slider_description, #arrow_left, #arrow_right, #marron{
 	position:absolute;
 }
 
 #slider img{
-	border-bottom: solid #45AED6 5px;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.4);
 	width: 100%;
+}	
+
+#marron{
+	position: absolute;
+	background: #45AED6;
+	height: 6px;
+	content: '';
+	width: 150px;
+	bottom: 4px;
+	left: 0;
 }	
 
 /* Description */ 
@@ -755,7 +765,7 @@ footer{
 	.text{
 	  	font-size: 2vmax;
 	}
-	
+
 	#formulaire{
 		width: 92%;
         bottom: -84%;
