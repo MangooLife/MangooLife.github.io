@@ -766,6 +766,10 @@ footer{
 	  	font-size: 2vmax;
 	}
 
+	.text p {
+	    font-size: 2vmin;
+	}
+
 	#formulaire{
 		width: 92%;
         bottom: -84%;
