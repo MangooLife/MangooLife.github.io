@@ -431,7 +431,6 @@ section p{
 .container{
 	position: relative;
 	width: 21%;
-	height:46%;
 	margin-bottom: 20px;
 	margin-left: 20px;
 }
@@ -782,6 +781,10 @@ footer{
 
 	.logo{
 		width: 50%;
+	}
+
+	nav{
+		margin-left: 0px;
 	}
 
 	nav a:hover{
