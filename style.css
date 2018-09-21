@@ -755,11 +755,12 @@ footer{
 	.text{
 	  	font-size: 2vmax;
 	}
-
-/*
+	
 	#formulaire{
-		height: 73%;
-	}*/
+		width: 92%;
+        bottom: -84%;
+        right: 9px;
+	}
   
 }
 
