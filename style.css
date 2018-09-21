@@ -723,6 +723,7 @@ footer{
 	nav ul{
 		margin:5px;
 		padding:0px;
+		padding-left: 0px;
 	}
 
 	nav a:hover{
@@ -804,6 +805,9 @@ footer{
     	border-top: 0px;
 	}
 
+	nav ul{
+	    padding-left: 0px;
+	}
 
 	#slider_description{
 		bottom: 30%;
