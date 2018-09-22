@@ -653,6 +653,14 @@ footer{
 		bottom: 22%;
 		left: 100px;
 	}  
+
+	.container{
+		width: 40%;
+	}
+
+	.text{
+	  	font-size: 2vmin;
+	}
   
 }
 
