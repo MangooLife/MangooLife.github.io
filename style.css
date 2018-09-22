@@ -606,7 +606,8 @@ footer{
 @media (min-width: 1025px) and (max-width: 1280px) {
   
 	#slider_description{
-		bottom: 41%;
+		bottom: 22%;
+		left: 100px;
 	}
 
 	#slider_description h1{
@@ -648,7 +649,10 @@ footer{
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
+	#slider_description{
+		bottom: 22%;
+		left: 100px;
+	}  
   
 }
 
@@ -661,8 +665,8 @@ footer{
  
 
 	#slider_description{
-		bottom: 30%;
-		left: 121px;
+		bottom: 20%;
+		left: 100px;
 	}
 
 	#slider_description h1{
@@ -733,12 +737,12 @@ footer{
 	}
 
 	#slider_description{
-		bottom: 30%;
+		bottom: 25%;
 		left: 100px;
 	}
 
 	#slider_description h1{
-		font-size:2vmax;
+		font-size:2vmin;
 	}
 
 	#slider_description p{
@@ -810,12 +814,12 @@ footer{
 	}
 
 	#slider_description{
-		bottom: 20%;
+		bottom: 25%;
 		left: 60px;
 	}
 
 	#slider_description h1{
-		font-size:2vmax;
+		font-size:2vmin;
 	}
 
 	#slider_description p{

@@ -11,10 +11,6 @@ nav{
 
 /* --------------------------- SLIDER ------------------------------- */
 
-#slider_description h1{
-	font-size:2vmax;
-}
-
 #slider_description p{
 	padding-bottom: 10px;
 	font-size:2vmin;
