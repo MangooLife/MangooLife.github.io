@@ -69,8 +69,8 @@ header{
 /* Pour pouvoir voir les ancres */
 .ancres{
 	display: block;
-  	padding-top: 97px; /*same height as header*/
-  	margin-top: -97px; /*same height as header*/
+  	padding-top: 98px; /*same height as header*/
+  	margin-top: -98px; /*same height as header*/
   	/*visibility: hidden;*/ 
 }
 
@@ -441,8 +441,8 @@ section p{
 .container{
 	position: relative;
 	width: 21%;
-	margin-bottom: 20px;
-	margin-left: 20px;
+	margin-left: -20px;
+	margin-bottom: auto;
 }
 
 .projet{
@@ -759,7 +759,7 @@ footer{
 
 	#slider_description p{
 		padding-bottom: 10px;
-		font-size:10px;
+		font-size:8px;
 	}
 
 	.bouton_info{
