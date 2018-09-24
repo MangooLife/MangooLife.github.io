@@ -543,12 +543,16 @@ section p{
 	padding-right: 15px;
 }
 
-#formulaire h1{
+#formulaire h2{
 	font-family: 'Roboto-Medium', Arial, sans-serif;
 	font-size: 1.5em;
 	color: black;
 	margin-top :10px;
 	margin-bottom: 10px;
+	text-transform: none;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #formulaire p{
@@ -750,7 +754,7 @@ footer{
 	}
 
 	#slider_description h1{
-		font-size:2vmin;
+		font-size:2vmax;
 	}
 
 	#slider_description p{
@@ -827,7 +831,7 @@ footer{
 	}
 
 	#slider_description h1{
-		font-size:2vmin;
+		font-size:2vmax;
 	}
 
 	#slider_description p{

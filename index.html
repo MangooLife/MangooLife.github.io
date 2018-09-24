@@ -4,10 +4,9 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="icon" type="image/png" href="images/logo.png" sizes="32x32" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" media="all and (max-width:1280px)" href="responsive.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" /> 
 		<title>WebAgency - L'agence de tous vos projets !</title>
+		<!-- Metadescription nécessaire au SEO -->
+		<meta name="description" content="L'agence de tous vos projets ! - Nous vous accompagnons dans vos projets de créations UI, UX et SEO">
 		<!-- Opengraph -->
 		<meta property="og:title" content="WebAgency - L'agence de tous vos projets !" />
 		<meta property="og:type" content="article" />
@@ -20,6 +19,10 @@
 		<meta name='twitter:title' content='WebAgency' />
 		<meta name='twitter:description' content="L'agence de tous vos projets ! - Nous vous accompagnons dans vos projets de créations UI, UX et SEO" />
 		<meta name='twitter:image' content='https://mangoolife.github.io/images/logo.png' />
+		<!-- Feuilles de style -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" /> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" media="all and (max-width:1280px)" href="responsive.css" />
 	</head>
 	<body>
 		<div id="accueil"></div>
@@ -32,9 +35,9 @@
 			<nav>
 				<ul>
 					<li><a href="#accueil">Accueil</a></li>
-					<li><a href="#Services">Services</a></li>
-					<li><a href="#Portfolio">Portfolio</a></li>
-					<li><a href="#Contact">Contact</a></li>
+					<li><a href="#cat_services">Services</a></li>
+					<li><a href="#cat_portfolio">Portfolio</a></li>
+					<li><a href="#cat_contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -54,7 +57,7 @@
 
 		<!-- SERVICES -->
 		<section id="services">
-			<span class="ancres" id="Services"></span>
+			<div class="ancres" id="cat_services"></div>
 			<h2>Nos services</h2>
 			<div class="trait"></div>
 			<div class="point"><i class="fas fa-circle" id="point1s"></i></div>
@@ -86,7 +89,7 @@
 
 		<!-- PORTFOLIO -->
 		<section id="portfolio">	
-		<span class="ancres" id="Portfolio"></span>
+			<div class="ancres" id="cat_portfolio"></div>
 			<h2>Nos projets</h2>
 			<div class="trait"></div>
 			<div class="point"><i class="fas fa-circle" id="point2s"></i></div>
@@ -210,13 +213,13 @@
 			</div>
 		</section>
 
-		<span class="ancres" id="Contact"></span>
+		<div class="ancres" id="cat_contact"></div>
 		<!-- CONTACT -->
 		<section id="contact">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080334!2d2.347636915677772!3d48.873055307627986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1536871761497" id="map"></iframe>
 			<!-- FORMULAIRE -->
 			<div id="formulaire">
-				<h1>Contact Info</h1>
+				<h2>Contact Info</h2>
 				<p><span>WebAgency SAS</span><br/>
 					25 rue d'Hauteville 75010 PARIS<br/>
 					<abbr title="Telephone">Tel :</abbr> 01 02 03 04 05
