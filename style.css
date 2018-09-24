@@ -770,6 +770,11 @@ section p{
 		width: 50%;
 	}
 
+	.text h3 {
+        margin: 0px;
+    	margin-left: 5px;
+	}
+
 	.text p{
 	    font-size: 2vmin;
 	}
@@ -876,6 +881,11 @@ section p{
 		width: 100%;
     	margin-left: 36px;
 
+	}
+
+	.text h3 {
+        margin: 0px;
+    	margin-left: 5px;
 	}
 
 	.text p{
