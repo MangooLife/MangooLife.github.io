@@ -754,7 +754,7 @@ footer{
 	}
 
 	#slider_description h1{
-		font-size:2vmax;
+		font-size:12px;
 	}
 
 	#slider_description p{
@@ -826,16 +826,17 @@ footer{
 	}
 
 	#slider_description{
-		bottom: 25%;
+		bottom: 15%;
 		left: 60px;
 	}
 
 	#slider_description h1{
-		font-size:2vmax;
+		font-size:12px;
+		margin-bottom: 0px;
 	}
 
 	#slider_description p{
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 		font-size:2vmin;
 	}
 
