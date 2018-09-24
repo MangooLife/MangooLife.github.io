@@ -591,15 +591,6 @@ section p{
 	color: #FFFFFF;
 }
 
-/* --------------------------- FOOTER ------------------------------- */
-footer{
-	display: flex;
-	justify-content:space-around;
-	align-items:center;
-	margin: 5px;
-	font-size: 0.5em;
-}
-
 /************************************** MEDIA PERSO ***************************************/
 /* --------------------------- RESPONSIVE ------------------------------- */
 /* 
@@ -883,7 +874,8 @@ footer{
 
 	.container{
 		width: 100%;
-		margin-right: 20px;
+    	margin-left: 36px;
+
 	}
 
 	.text p{
