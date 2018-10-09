@@ -532,6 +532,9 @@ section p{
 	padding-right: 0px;
 }
 /* formulaire */
+label{
+	display:none;
+}
 #formulaire{
 	position: absolute;
 	width: 23%;
